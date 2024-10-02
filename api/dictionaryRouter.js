@@ -2,7 +2,7 @@ import express from 'express';
 import { isValidWord } from '../lib/isValidWord.js';
 import { isInDictionary } from '../lib/isInDictionary.js';
 
-let dictionary = [];
+let dictionary = ["labas","rytas"];
 
 export const dictionaryRouter = express.Router();
 
