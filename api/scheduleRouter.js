@@ -5,4 +5,5 @@ import {savaitesTvarkarastis} from './scheduleController.js';
 
 const router = express.Router();
 
-router.get('/',savaitesTvarkarastis);
+router.get('/savaites',savaitesTvarkarastis);
+router.get('/:dienos',dienosTvarkarastis);

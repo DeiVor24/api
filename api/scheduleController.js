@@ -1,3 +1,5 @@
+import { request } from "express";
+
  let schedule = [
         ["Pirmadienio pirma pamoka", "Pirmadienio antra pamoka"],
         ["Antradienio pirma pamoka", "Antradienio antra pamoka"],
@@ -8,4 +10,7 @@
         []
     ];
 
-    export const savaitesTvarkarastis = 
+  
+    export const savaitesTvarkarastis = (request,Response) => { 
+        res.status(200).json({ schedule });
+    };
